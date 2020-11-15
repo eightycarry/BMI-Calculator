@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <div class="container ">
+        <h1>Body Mass Index Calculator</h1>
+
+        <fieldset>
+
+            <form id="bmiForm">
+                <div class="height">
+                    <label for="height">Please enter your height (in inches)</label>
+                    <input name="height" id="height" type="number" class="form-control">
+                </div>
+
+                <div class="weight">
+                    <label for="weight">Please enter your weight (in pounds)</label>
+                    <input name="weight" id="weight" type="number" class="form-control">
+                </div>
+
+                <button id="bmiButton">Calculate my BMI</button>
+            </form>
+        </fieldset>
+        <p class="outputBMI">
+            <span id="bmiP"></span>
+            <br>
+            <span id="bmiC"></span>
+        </p>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="bmi.js"></script>
+
+</html>
